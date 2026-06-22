@@ -844,44 +844,290 @@ footer {
   100% { transform: translateY(0) rotate(0); }
 }
 
-/* Responsive Breakpoints */
+/* =============================================
+   RESPONSIVE DESIGN — Full Device Lock-Down
+   ============================================= */
+
+/* Prevent ANY horizontal overflow at the root level */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Glow orbs must never cause scrollbars */
+.glow-orb {
+  position: fixed;
+  opacity: 0.5;
+}
+
+/* ---- Tablet & Small Laptops (≤ 991px) ---- */
 @media (max-width: 991px) {
   .hero-section {
     padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-content {
     text-align: center;
   }
-  
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
   .hero-description {
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .hero-visual {
-    margin-top: 4rem;
+
+  .hero-ctas {
+    justify-content: center;
   }
-  
+
+  .hero-visual {
+    margin-top: 3rem;
+  }
+
+  .profile-container {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+  }
+
+  .tech-badge-orbit {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
   .about-card {
     padding: 2rem;
   }
-  
+
   .about-details-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .section-title-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  /* Navbar mobile menu styling */
+  .navbar-collapse {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.75rem;
+    border: 1px solid var(--glass-border);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.6rem 0;
+    text-align: center;
+  }
+
+  .theme-toggle-btn {
+    margin: 0.75rem auto 0;
+  }
 }
 
-@media (max-width: 576px) {
+/* ---- Mobile Phones (≤ 767px) ---- */
+@media (max-width: 767px) {
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
+
   .hero-typewriter {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    min-height: 2rem;
   }
+
+  .hero-subtitle-top {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-ctas .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+
   .profile-container {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
+
+  /* Project cards: full width, smaller image */
+  .project-img-wrapper {
+    height: 180px;
+  }
+
+  .project-body {
+    padding: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .project-description {
+    font-size: 0.88rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-links .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Skills grid: 2 columns on phones */
+  .skill-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .skill-icon-box {
+    width: 56px;
+    height: 56px;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .skill-card p {
+    font-size: 0.82rem;
+  }
+
+  /* Contact section */
   .contact-form-card {
     padding: 1.5rem;
+  }
+
+  .contact-info-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contact-icon-box {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .contact-info-details h4 {
+    font-size: 0.9rem;
+  }
+
+  .contact-info-details p {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+
+  .section-title-wrapper {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title-wrapper h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* About section on mobile */
+  .about-info-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  /* Glow orbs: shrink and hide overflow */
+  .glow-orb {
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 0;
+  }
+}
+
+/* ---- Very Small Phones (≤ 400px) ---- */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-typewriter {
+    font-size: 1.1rem;
+  }
+
+  .profile-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .tech-badge-orbit {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .project-img-wrapper {
+    height: 150px;
+  }
+
+  .about-details-grid {
+    gap: 0.75rem;
+  }
+
+  .detail-item p {
+    font-size: 0.92rem;
+  }
+
+  .glow-orb {
+    display: none;
   }
 }
