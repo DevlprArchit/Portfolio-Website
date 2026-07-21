@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archit Sharma | ArchOS Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bootScreen">
+  <div class="boot-logo"><img src="Assets/profile.png" alt="Profile"></div>
+  <h1>ArchOS</h1>
+  <p>Loading Portfolio...</p>
+  <div class="loader"><div class="loader-bar"></div></div>
+</div>
+
+<div class="desktop">
+
+<div class="wallpaper"></div>
+<div class="overlay"></div>
+
+<header class="topbar">
+  <div class="logo">
+    <i class="fa-solid fa-code"></i>
+    <span>ArchOS</span>
+  </div>
+  <div class="status">
+    <span id="currentDate"></span>
+    <span id="currentTime"></span>
+  </div>
+</header>
+
+<section class="desktop-icons">
+  <div class="icon" data-window="aboutWindow"><i class="fa-solid fa-user"></i><p>About</p></div>
+  <div class="icon" data-window="projectWindow"><i class="fa-solid fa-folder-open"></i><p>Projects</p></div>
+  <div class="icon" data-window="skillsWindow"><i class="fa-solid fa-laptop-code"></i><p>Skills</p></div>
+  <div class="icon" data-window="achievementWindow"><i class="fa-solid fa-trophy"></i><p>Achievements</p></div>
+  <div class="icon" data-window="certificateWindow"><i class="fa-solid fa-award"></i><p>Certificates</p></div>
+  <div class="icon" data-window="resumeWindow"><i class="fa-solid fa-file-lines"></i><p>Resume</p></div>
+  <div class="icon" data-window="contactWindow"><i class="fa-solid fa-envelope"></i><p>Contact</p></div>
+</section>
+
+<footer class="taskbar">
+<div class="dock">
+<button class="dock-btn" data-window="aboutWindow"><i class="fa-solid fa-user"></i></button>
+<button class="dock-btn" data-window="projectWindow"><i class="fa-solid fa-folder-open"></i></button>
+<button class="dock-btn" data-window="skillsWindow"><i class="fa-solid fa-laptop-code"></i></button>
+<button class="dock-btn" data-window="contactWindow"><i class="fa-solid fa-envelope"></i></button>
+</div>
+<div class="taskbar-clock"><span id="clock"></span></div>
+</footer>
+
+<!-- About -->
+<div class="window" id="aboutWindow">
+<div class="window-header">
+<div class="window-title"><i class="fa-solid fa-user"></i> About Me</div>
+<div class="window-controls">
+<button class="minimize">-</button>
+<button class="maximize">□</button>
+<button class="close">×</button>
+</div>
+</div>
+<div class="window-body">
+<h1>Archit Sharma</h1>
+<h3>Full Stack Web Developer</h3>
+<p>B.Tech CSE student passionate about modern web development using HTML, CSS, JavaScript, React and Firebase.</p>
+<ul>
+<li>Kangra, Himachal Pradesh</li>
+<li>Hack-O-Fest 2026 Organizer</li>
+<li>Open for Internships</li>
+</ul>
+</div>
+</div>
+
+<!-- Projects -->
+<div class="window" id="projectWindow">
+<div class="window-header">
+<div class="window-title"><i class="fa-solid fa-folder-open"></i> Projects</div>
+<div class="window-controls">
+<button>-</button><button>□</button><button>×</button>
+</div>
+</div>
+<div class="window-body">
+<h2>Featured Projects</h2>
+<ul>
+<li>Social Circle</li>
+<li>The Sunrise Restaurant</li>
+<li>S8UL Gaming</li>
+<li>Portfolio Website</li>
+</ul>
+</div>
+</div>
+
+<!-- Skills -->
+<div class="window" id="skillsWindow">
+<div class="window-header">
+<div class="window-title"><i class="fa-solid fa-laptop-code"></i> Skills</div>
+</div>
+<div class="window-body">
+<p>HTML • CSS • JavaScript • React • Firebase • Bootstrap • Python • GitHub</p>
+</div>
+</div>
+
+<!-- Achievements -->
+<div class="window" id="achievementWindow">
+<div class="window-header"><div class="window-title">Achievements</div></div>
+<div class="window-body">
+<ul>
+<li>Hack-O-Fest 2026 Organizer</li>
+<li>National Hackathon Participant</li>
+<li>Built Social Circle</li>
+</ul>
+</div>
+</div>
+
+<!-- Certificates -->
+<div class="window" id="certificateWindow">
+<div class="window-header"><div class="window-title">Certificates</div></div>
+<div class="window-body">
+<ul>
+<li>IIT Bombay</li>
+<li>UniAthena</li>
+<li>Python</li>
+<li>Web Development</li>
+</ul>
+</div>
+</div>
+
+<!-- Resume -->
+<div class="window" id="resumeWindow">
+<div class="window-header"><div class="window-title">Resume</div></div>
+<div class="window-body">
+<a href="Assets/Archit_Sharma_Resume.pdf" download>Download Resume</a>
+</div>
+</div>
+
+<!-- Contact -->
+<div class="window" id="contactWindow">
+<div class="window-header"><div class="window-title">Contact</div></div>
+<div class="window-body">
+<p>Email: work.with.archit04@gmail.com</p>
+<p>Phone: +91 9459956889</p>
+<p>Location: Kangra, Himachal Pradesh</p>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
