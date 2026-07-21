@@ -1,19 +1,45 @@
-# Portfolio-Website — ArchOS
+# Archit Sharma | Premium Developer Portfolio
 
-A Portfolio Website That Describes Me And Connects Me With Outer World, With Other Developers & Recruiters.
+A modern, highly interactive, and premium personal portfolio website designed to showcase my engineering skills, projects, and experience. Built with a focus on immersive UI/UX, micro-interactions, and high-performance physics.
 
-`index.html` is now **ArchOS** — the portfolio reimagined as an interactive desktop operating system:
+## ✨ Key Features
 
-- Cinematic boot sequence into an animated glass desktop
-- Draggable, resizable, minimizable/maximizable windows for every section
-- Dock + taskbar with a live clock, Windows-style Start menu, and Spotlight-style search (`Ctrl/Cmd + K`)
-- Apps: **About** (timeline & tech stack), **Projects** (filterable cards + modal), **Skills** (animated bars), **Resume** (embedded viewer + download), **Certificates**, **Contact** (validated form), a working **Terminal**, a **File Explorer**, live **GitHub** stats, and a **Settings** app (accent color, wallpaper, animation/sound toggles — all saved locally)
-- A generative ambient music player (no audio files needed — built with the Web Audio API)
-- A dedicated, redesigned mobile OS mode — not just a shrunk desktop
-- No build step: plain HTML/CSS/JS, fully GitHub Pages compatible
+This portfolio goes beyond standard templates by incorporating advanced frontend engineering and choreography:
 
-The original single-page site is preserved at `index-classic.html`.
+- **Cinematic Preloader:** A sleek 0-100% loading screen that ensures all assets and canvas graphics are perfectly loaded before sliding away to reveal the site.
+- **Deep Space Particle Physics:** A custom HTML5 `<canvas>` background featuring animated, floating particles that create a dynamic atmosphere.
+- **True 3D Holographic Parallax:** The hero section tracks mouse movement to create a 3D orbit effect for the profile image and skill badges.
+- **Scroll-Triggered Reveal Physics:** Utilizes the `IntersectionObserver` API so that sections, projects, and skills elegantly float up and fade into view exactly as they enter the screen.
+- **Magnetic Call-To-Action Buttons:** Buttons use custom JavaScript physics to slightly attract towards the user's cursor on hover, creating a satisfying tactile feel.
+- **Apple-Style Text Reveals:** Masked typography animations where text slides up line-by-line out of thin air.
+- **Dark/Light Theme Toggle:** Fully supported global CSS variables for a seamless transition between a deep space dark mode and a clean light mode.
+- **Premium Micro-Interactions:** Customized scrollbars, glowing custom text selection (highlighting), and sleek CSS animations across all interactive elements.
 
-### Adding your résumé
-Drop a PDF at `Assets/Archit_Sharma_Resume.pdf` — the Resume app will automatically detect it and switch from a fallback message to an embedded preview with a working download button.
+## 🛠️ Technologies Used
 
+- **HTML5** (Semantic structure)
+- **CSS3** (Custom properties, Keyframe animations, Flexbox/Grid layouts, Glassmorphism)
+- **JavaScript (ES6+)** (Canvas API, IntersectionObserver, DOM Manipulation, Physics math)
+- **Bootstrap 4.5** (Responsive grids and foundational layout)
+- **FontAwesome 5** (Vector icons)
+
+## 🚀 How to Run Locally
+
+Because this project uses vanilla frontend technologies without a build step, it is extremely simple to run:
+
+1. Clone or download this repository.
+2. Navigate to the project folder.
+3. Simply double-click `index.html` to open it in your default web browser.
+
+*(For the best experience, view on a modern browser like Chrome, Edge, Safari, or Firefox).*
+
+## 👨‍💻 Author
+
+**Archit Sharma**  
+*Computer Engineering Student & Web Developer*  
+- [GitHub](https://github.com/DevlprArchit)
+- [LinkedIn](https://www.linkedin.com/in/archit-sharma-513689255)
+- [X / Twitter](https://x.com/ArchitS07503713)
+
+---
+*Built with 💜.*
