@@ -468,6 +468,76 @@ a:hover {
 }
 
 /* Profile Photo */
+/* ===== About Video ===== */
+
+.about-video-card{
+    position:relative;
+    width:360px;
+    height:460px;
+    margin:auto;
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.45),
+        0 0 50px rgba(139,92,246,.15);
+
+    transition:.45s ease;
+}
+
+.about-video-card:hover{
+    transform:translateY(-12px) rotate(-1deg);
+}
+
+.about-video-card video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transform:scale(1.08);
+
+    transition:.6s;
+}
+
+.about-video-card:hover video{
+    transform:scale(1.14);
+}
+
+.video-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5,5,5,.75),
+            rgba(5,5,5,.05) 45%,
+            transparent
+        );
+
+    pointer-events:none;
+}
+
+.video-border{
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:32px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    pointer-events:none;
+}
 .hero-visual {
   position: relative;
   display: flex;
