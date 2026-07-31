@@ -1378,3 +1378,15 @@ body.light-mode .loader-bar-container {
 .campus-project .project-body{
     flex:1;
 }
+
+@media (max-width: 991px) {
+  .campus-project {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .campus-project .project-img-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
